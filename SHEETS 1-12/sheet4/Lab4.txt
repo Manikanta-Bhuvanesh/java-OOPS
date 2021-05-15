@@ -1,0 +1,133 @@
+Note: 
+-----
+
+After completion of Lab exercise, prepare a word document with all codes and output screenshots for each question of lab exercise. Then convert word document into pdf and should be named as Lab4_RegisterNo.pdf. Later upload it into VTOP.
+
+Lab4 Exercises:
+---------------
+1.a.
+
+Create an abstract class named Book. Include a String field for the book’s
+title and a double field for the book’s price. Within the class, include a
+constructor that requires the book title, and add two get methods—one
+that returns the title and one that returns the price. Include an abstract
+method named setPrice(). Create two child classes of Book: Fiction and
+NonFiction. Each must include a setPrice() method that sets the price for
+all Fiction Books to $24.99 and for all NonFiction Books to $37.99. Write a
+constructor for each subclass, and include a call to setPrice() within each.
+Write an application demonstrating that you can create both a Fiction and
+a NonFiction Book, and display their fields. Save the files as Book.java,
+Fiction.java, NonFiction.java, and UseBook.java.
+
+1.b.
+
+Write an application named BookArray in which you create an array that
+holds 10 Books, some Fiction and some NonFiction. Using a for loop,
+display details about all 10 books. Save the file as BookArray.java.
+
+2.a.
+
+The Talk-A-Lot Cell Phone Company provides phone services for its
+customers. Create an abstract class named PhoneCall that includes a String
+field for a phone number and a double field for the price of the call. Also
+include a constructor that requires a phone number parameter and that
+sets the price to 0.0. Include a set method for the price. Also include three
+abstract get methods—one that returns the phone number, another that
+returns the price of the call, and a third that displays information about
+the call. Create two child classes of PhoneCall: IncomingPhoneCall and
+OutgoingPhoneCall. The IncomingPhoneCall constructor passes its phone
+number parameter to its parent’s constructor and sets the price of the call to
+0.02. The method that displays the phone call information displays the phone
+number, the rate, and the price of the call (which is the same as the rate). The
+OutgoingPhoneCall class includes an additional field that holds the time of
+the call in minutes. The constructor requires both a phone number and the
+time. The price is 0.04 per minute, and the display method shows the details
+of the call, including the phone number, the rate per minute, the number of
+minutes, and the total price. Write an application that demonstrates you can
+instantiate and display both IncomingPhoneCall and OutgoingPhoneCall
+objects. Save the files as PhoneCall.java, IncomingPhoneCall.java,
+OutgoingPhoneCall.java, and DemoPhoneCalls.java.
+
+2.b.
+
+Write an application in which you assign data to a mix of eight
+IncomingPhoneCall and OutgoingPhoneCall objects into an array. Use a for
+loop to display the data. Save the file as PhoneCallArray.java.
+
+3.a.
+
+Create an interface named Turner, with a single method named turn().
+Create a class named Leaf that implements turn() to display Changing
+colors. Create a class named Page that implements turn() to display Going
+to the next page. Create a class named Pancake that implements turn() to
+display Flipping. Write an application named DemoTurners that creates one
+object of each of these class types and demonstrates the turn() method for
+each class. Save the files as Turner.java, Leaf.java, Page.java, Pancake.java,
+and DemoTurners.java.
+
+3.b.
+
+Think of two more objects that use turn(), create classes for them, and then
+add objects to the DemoTurners application, renaming it DemoTurners2.
+java. Save the files, using the names of new objects that use turn().
+
+3.c.
+
+Apply Dynamic method dispatch to show the power of it and name the class as 
+DemoTurners3.
+
+4.a.
+
+Create an abstract class called GeometricFigure. Each figure includes a height,
+a width, a figure type, and an area. Include an abstract method to determine the
+area of the figure. Create two subclasses called Square and Triangle. Create an
+application that demonstrates creating objects of both subclasses, and store them
+in an array. Save the files as GeometricFigure.java, Square.java, Triangle.java,
+and UseGeometric.java.
+
+4.b.
+
+Modify 4.a., adding an interface called SidedObject that contains a
+method called displaySides(); this method displays the number of sides
+the object possesses. Modify the GeometricFigure subclasses to include
+the use of the interface to display the number of sides of the figure. Create
+an application that demonstrates the use of both subclasses. Save the files as
+GeometricFigure2.java, Square2.java, Triangle2.java, SidedObject.java, and
+UseGeometric2.java.
+
+5.
+Sanchez Construction Loan Co. makes loans of up to $100,000 for construction
+projects. There are two categories of Loans—those to businesses and those to
+individual applicants.
+
+Write an application that tracks all new construction loans. The application also
+must calculate the total amount owed at the due date (original loan amount +
+loan fee). The application should include the following classes:
+
+•• Loan—A public abstract class that implements the LoanConstants interface.
+A Loan includes a loan number, customer last name, amount of loan, interest
+rate, and term. The constructor requires data for each of the fields except
+interest rate. Do not allow loan amounts greater than $100,000. Force any
+loan term that is not one of the three defined in the LoanConstants class to
+a short-term, 1-year loan. Create a toString() method that displays all the
+loan data.
+
+•• LoanConstants—A public interface class. LoanConstants includes constant
+values for short-term (1 year), medium-term (3 years), and long-term
+(5 years) loans. It also contains constants for the company name and the
+maximum loan amount.
+
+•• BusinessLoan—A public class that extends Loan. The BusinessLoan constructor
+sets the interest rate to 1% more than the current prime interest rate.
+
+•• PersonalLoan—A public class that extends Loan. The PersonalLoan constructor
+sets the interest rate to 2% more than the current prime interest rate.
+
+•• CreateLoans—An application that creates an array of five Loans. Prompt
+the user for the current prime interest rate. Then, in a loop, prompt the
+user for a loan type and all relevant information for that loan. Store the
+created Loan objects in the array. When data entry is complete, display
+all the loans.
+
+Save the files as Loan.java, LoanConstants.java, BusinessLoan.java,
+PersonalLoan.java, and CreateLoans.java.

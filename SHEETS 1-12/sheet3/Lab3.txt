@@ -1,0 +1,103 @@
+Note: 
+-----
+
+After completion of Lab exercise, prepare a word document with all codes and output screenshots for each question of lab exercise. Then convert word document into pdf and should be named as Lab3_RegisterNo.pdf. Later upload it into VTOP.
+
+
+Lab3 Exercise:
+--------------
+
+1.
+Mick’s Wicks makes candles in various sizes. Create a class for the business
+named Candle that contains data fields for color, height, and price. Create
+get methods for all three fields. Create set methods for color and height, but
+not for price. Instead, when height is set, determine the price as $2 per inch.
+Create a child class named ScentedCandle that contains an additional data
+field named scent and methods to get and set it. In the child class, override
+the parent’s setHeight() method to set the price of a ScentedCandle object at
+$3 per inch. Write an application that instantiates an object of each type and
+displays the details. Save the files as Candle.java, ScentedCandle.java, and
+DemoCandles.java.
+
+2.
+Create a class named Poem that contains fields for the name of the poem and
+the number of lines in it. Include a constructor that requires values for both
+fields. Also include get methods to retrieve field values. Create three subclasses:
+Couplet, Limerick, and Haiku. The constructor for each subclass requires only
+a title; the lines field is set using a constant value. A couplet has two lines, a
+limerick has five lines, and a haiku has three lines. Create an application that
+demonstrates usage of an object of each type. Save the files as Poem.java,
+Couplet.java, Limerick.java, Haiku.java, and DemoPoems.java.
+
+3.
+The developers of a free online game named "Sugar Smash" have asked you to
+develop a class named SugarSmashPlayer that holds data about a single player.
+The class contains the following fields: the player’s integer ID number, a String
+screen name, and an array of integers that stores the highest score achieved in
+each of 10 game levels. Include get and set methods for each field. The get and set
+methods for the scores should each require two parameters—one that represents
+the score achieved and one that represents the game level to be retrieved or
+assigned. Display an error message if the user attempts to assign or retrieve a score
+from a level that is out of range for the array of scores. Additionally, no level except
+the first one should be set unless the user has earned at least 100 points at each
+previous level. If a user tries to set a score for a level that is not yet available, issue
+an error message. Create a class named PremiumSugarSmashPlayer that descends
+from SugarSmashPlayer. This class is instantiated when a user pays $2.99 to
+have access to 40 additional levels of play. As in the free version of the game, a
+user cannot set a score for a level unless the user has earned at least 100 points
+at all previous levels. Create a program that instantiates several objects of each
+type and demonstrates the methods. Save the files as SugarSmashPlayer.java,
+PremiumSugarSmashPlayer.java, and DemoSugarSmash.java.
+
+4.
+Create a class named CollegeCourse that includes data fields that hold the
+department (for example, ENG), the course number (for example, 101), the
+credits (for example, 3), and the fee for the course (for example, $360). All of the
+fields are required as arguments to the constructor, except for the fee, which is
+calculated at $120 per credit hour. Include a display() method that displays
+the course data. Create a subclass named LabCourse that adds $50 to the course
+fee. Override the parent class display() method to indicate that the course is
+a lab course and to display all the data. Write an application named UseCourse
+that prompts the user for course information. If the user enters a class in any of
+the following departments, create a LabCourse: BIO, CHM, CIS, or PHY. If the
+user enters any other department, create a CollegeCourse that does not include
+the lab fee. Then display the course data. Save the files as CollegeCourse.java,
+LabCourse.java, and UseCourse.java.
+
+5.
+Develop a set of classes for a college to use in various student service and
+personnel applications. Classes you need to design include the following:
+
+•• Person—A Person contains a first name, last name, street address, zip code,
+and phone number. The class also includes a method that sets each data
+field, using a series of dialog boxes and a display method that displays all of a
+Person’s information on a single line at the command line on the screen.
+
+•• CollegeEmployee—CollegeEmployee descends from Person. A
+CollegeEmployee also includes a Social Security number, an annual salary,
+and a department name, as well as methods that override the Person methods
+to accept and display all CollegeEmployee data.
+
+•• Faculty—Faculty descends from CollegeEmployee. This class also includes
+a Boolean field that indicates whether the Faculty member is tenured, as well
+as methods that override the CollegeEmployee methods to accept and display
+this additional piece of information.
+
+•• Student—Student descends from Person. In addition to the fields available in
+Person, a Student contains a major field of study and a grade point average as
+well as methods that override the Person methods to accept and display these
+additional facts.
+
+Write an application named CollegeList that declares an array of four “regular”
+CollegeEmployees, three Faculty, and seven Students. Prompt the user to
+specify which type of person’s data will be entered (C, F, or S), or allow the user
+to quit (Q). While the user chooses to continue (that is, does not quit), accept
+data entry for the appropriate type of Person. If the user attempts to enter data
+for more than four CollegeEmployees, three Faculty, or seven Students, display
+an error message. When the user quits, display a report on the screen listing
+each group of Persons under the appropriate heading of “College Employees,”
+“Faculty,” or “Students.” If the user has not entered data for one or more types of
+Persons during a session, display an appropriate message under the appropriate
+heading. Save the files as Person.java, CollegeEmployee.java, Faculty.java,
+Student.java, and CollegeList.java.
+

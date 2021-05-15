@@ -1,0 +1,139 @@
+Note: 
+-----
+
+After completion of Lab exercise, prepare a word document with all codes and output screenshots for each question of lab exercise. Then convert word document into pdf and should be named as Lab2_RegisterNo.pdf. Later upload it into VTOP.
+
+Lab Exercise:
+-------------
+
+1.
+Create a class named Billing that includes three overloaded computeBill()
+methods for a photo book store.
+•• When computeBill() receives a single parameter, it represents the price of
+one photo book ordered. Add 8% tax, and return the total due.
+•• When computeBill() receives two parameters, they represent the price of
+a photo book and the quantity ordered. Multiply the two values, add 8% tax,
+and return the total due.
+•• When computeBill() receives three parameters, they represent the price of a
+photo book, the quantity ordered, and a coupon value. Multiply the quantity
+and price, reduce the result by the coupon value, and then add 8% tax and
+return the total due.
+Write a main() method that tests all three overloaded methods. Save the
+application as Billing.java.
+
+2.
+a. 
+Create a class named BloodData that includes fields that hold a blood type
+(the four blood types are O, A, B, and AB) and an Rh factor (the factors are
++ and –). Create a default constructor that sets the fields to O and +, and
+an overloaded constructor that requires values for both fields. Include get
+and set methods for each field. Save this file as BloodData.java. Create an
+application named TestBloodData that demonstrates each method works
+correctly. Save the application as TestBloodData.java.
+
+2.
+b. 
+Create a class named Patient that includes an ID number, age, and
+BloodData. Provide a default constructor that sets the ID number to 0, the age
+to 0, and the BloodData values to O and +. Create an overloaded constructor
+that provides values for each field. Also provide get methods
+for each field. Save the file as Patient.java. Create an application that demonstrates
+that each method works correctly, and save it as TestPatient.java.
+
+3.
+a.
+Create a class named Circle with fields named radius, diameter, and area.
+Include a constructor that sets the radius to 1 and calculates the other two
+values. Also include methods named setRadius() and getRadius(). The
+setRadius() method not only sets the radius, but it also calculates the other
+two values. (The diameter of a circle is twice the radius, and the area of a circle
+is pi multiplied by the square of the radius. Use the Math class PI constant
+for this calculation.) Save the class as Circle.java.
+
+3.
+b. 
+Create a class named TestCircle whose main() method declares several
+Circle objects. Using the setRadius() method, assign one Circle a
+small radius value, and assign another a larger radius value. Do not assign
+a value to the radius of the third circle; instead, retain the value assigned
+at construction. Display all the values for all the Circle objects. Save the
+application as TestCircle.java.
+
+4.
+Write a Java application that uses the Math class to determine the answers for
+each of the following:(Use java.lang.Math class)
+a. The square root of 37
+b. The sine and cosine of 300
+c. The value of the floor, ceiling, and round of 22.8
+d. The larger and the smaller of the character ‘D’ and the integer 71
+e. A random number between 0 and 20 (Hint: The random() method returns a
+value between 0 and 1; you want a number that is 20 times larger.)
+Save the application as MathTest.java.
+
+5.
+a.
+Write a program that declares two LocalDate objects and assign values that
+represent January 31 and December 31 in the current year. Display output that
+demonstrates the dates displayed when one, two, and three months are added to
+each of the objects. Save the application as TestMonthHandling.java.
+
+5.
+b.
+Write an application that computes and displays the day on which you become
+(or became) 10,000 days old. Save the application as TenThousandDaysOld.java.
+
+5.
+c.
+The LocalDate class includes an instance method named lengthOfMonth() that
+returns the number of days in the month. Write an application that uses methods
+in the LocalDate class to calculate how many days are left until the first day of
+next month. Display the result, including the name of the next month. Save the
+file as DaysTilNextMonth.java.
+
+Example program to support to exercise 5:
+--------------------------------------------
+import java.time.*;
+import java.util.Scanner;
+public class DeliveryDate
+{
+public static void main(String[] args)
+{
+Scanner input = new Scanner(System.in);
+LocalDate orderDate;
+int mo;
+int day;
+int year;
+final int WEEKS_FOR_DELIVERY = 2;
+System.out.print("Enter order month ");
+mo = input.nextInt();
+System.out.print("Enter order day ");
+day = input.nextInt();
+System.out.print("Enter order year ");
+year = input.nextInt();
+orderDate = LocalDate.of(year, mo, day);
+System.out.println("Order date is " + orderDate);
+System.out.println("Delivery date is " + orderDate.plusWeeks(WEEKS_FOR_DELIVERY)) ;
+}
+}
+
+methods:
+getYear(), getMonthValue(), and getDayOfMonth()
+plusDays(), plusWeeks(), plusMonths(), plusYears(),
+minusDays(), minusWeeks(), minusMonths(), and minusYears().
+
+graduationDate is the object of LocalDate:
+System.out.println("Graduation is on " + graduationDate.getDayOfWeek());
+
+-----------------------------------------------------------
+Also read about LocalDateTime class:(getSecond(),getMinute(),getHour(),...)
+
+LocalDateTime time1, time2;
+int seconds1, seconds2, difference;
+..............
+time1 = LocalDateTime.now();
+seconds1 = time1.getSecond();
+................
+time2 = LocalDateTime.now();
+seconds2 = time2.getSecond();
+
+difference = seconds2 - seconds1;

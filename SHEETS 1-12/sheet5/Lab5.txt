@@ -1,0 +1,44 @@
+Note: 
+-----
+
+After completion of Lab exercise, prepare a word document with all codes and output screenshots for each question of lab exercise. Then convert word document into pdf and should be named as Lab5_RegisterNo.pdf. Later upload it into VTOP.
+
+Lab5 Exercises:
+--------------
+
+1.
+Let's say you have an integer array and a string array. You have to write a single method printArray that can print all the elements of both arrays. The method should be able to accept both integer arrays or string arrays.(Do not use overloading, use generics).Name the file ArrayPrint.java
+
+2.
+Write a generic method to perform linearSearch on array of objects. Name the file GenericLinearSearch.java
+
+3.
+Write a generic class called GenericStack<T> that represents a stack structure. A stack structure follow the strategy last-in-first-out, which means that the last element added to the stack, is the first to be taken out. 
+
+The GenericStack class has the following attributes and methods:
+
+--An attribute ArrayList<T> elements which represents the elements of the stack.(All of you refer collection framework for ArrayList. or you can use an array to hold the elements of Stack.)[Refer the following links to have intro on ArrayList: https://www.w3schools.com/java/java_arraylist.asp, https://www.geeksforgeeks.org/arraylist-in-java/]
+
+--A constructor that creates the ArrayList or an Array
+
+--A method push(T e) which adds the element to the ArrayList<T> or array.
+
+--A method pop() which removes the last element of the ArrayList<T> (last element added), if the list is not already empty and returns it.
+
+--A method print() which prints the elements of the stack starting from the last element to the first element.
+
+Create a class GenericStackDemo, in which you create two stacks, one stack of String and one Stack of students, add elements, print, then remove all elements and then print.
+
+3. b.
+Create the generic interface GenericStackable<T> that contains the abstract methods:
+
+-an abstract method push(T e) which adds the element to the ArrayList<T>
+
+-an abstract method pop() which remove the last element of the ArrayList<T> (last element added), if the list is not already empty.
+
+-a abstract method print() which prints the elements of the stack starting from the last element to the first element.
+
+-a abstract method isEmpty() that would return true if the stack is empty, and false otherwise.
+
+Modify the class GenericStack<T> such that it implements the generic interface GenericStackable<T> . Create a class GenericStackDemo2 and work with two different stacks.
+
