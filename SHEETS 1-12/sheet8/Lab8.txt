@@ -1,0 +1,45 @@
+Note: 
+-----
+
+After completion of Lab exercise, prepare a word document with all codes and output screenshots for each question of lab exercise. Then convert word document into pdf and should be named as Lab8_RegisterNo.pdf. Later upload it into VTOP and MS Teams.
+
+Lab8 Exercises:
+--------------
+
+1.
+Write a multithreaded program to compute sum of elements of NxN matrix. It should be done in two phases.
+Phase I:
+Create N threads to compute 'N' Columns sum, where 'i' th thread computes a 'i' th column sum.
+Phase II:
+Create a thread to compute sum of 'N' Column's Sums. Finally main thread is going to print result.
+
+Note: Main thread should wait till all threads completes their work.
+
+You can use Math.random() to initialize NxN matrix, in the range 0 to 100; 5<=N<=8.
+
+Implement this application in two versions, using both Thread class & Runnable interface.
+
+2.
+a.
+Create a CeaserCipher class to perform substitution and reverse substitution of characters of a message.
+- mEncryption method - substitute a character with another charcter of alphabet.
+- mDecryption method - similar to mEncryption method but it perform in reverse.
+
+Each character of message is considered as numeric value with the following mapping:a-z to 0-25, respectively.
+(a-0,b-1,c-2,....z-25)
+
+The mEncryption method replaces each character of the message with another character by using the following formula:(N(ch)+k)%26, where N(ch) means Numeric value of a character 'ch', k means key value 0<=k<=25. 
+
+The mDecryption method substitutes each character with the following formula: (N(ch)-k)%26.
+
+Inputs to each method is a message and a key and output is substituted message printed on console character by character.
+
+(Ex: Input to mEncryption is: rama and 25 and output is: qzlz ;
+     Input to mDecryption is: qzlz and 25 and output is: rama )
+
+Create a TestCeaserCipher class to test mEncryption & mDecryption methods.
+
+2.
+b.
+
+Jennifer comes with a message "gdhrzfnncanx". She wants to perform reverse substitution using mDecryption method but not aware of key 'k'. To help her, develop a multithreaded program to create separate thread for each possible key 'k' and print all reverse substitutions. Do necessary changes to CeaserCipher class and provide synchronization for threads if the output from threads are mixed. Name the file as BruteForceCeaserCipher.java.

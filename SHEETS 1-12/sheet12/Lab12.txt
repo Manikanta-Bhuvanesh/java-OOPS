@@ -1,0 +1,36 @@
+Note: 
+-----
+
+After completion of Lab exercise, prepare a word document with all codes and output screenshots for each question of lab exercise. Then convert word document into pdf and should be named as Lab12_RegisterNo.pdf. Later upload it into VTOP and MS Teams.
+
+Lab12 Exercises:
+--------------
+
+1.
+
+Develop a Menu Based GUI using Swings:
+
+Menus:
+-Country
+-Font
+-Color
+
+Menu Items: 
+-Any 7 country names under Country.
+-Name,Type,Size are Menu items under Font.
+---Any four font names under Name Menu
+---Type should contain Bold,Italic
+---Size may contain 12,14,16,18
+-Any standard seven colors as Menu items under Color Menu.
+
+If a user clicks any menu item, It should be displayed with specified color and font in window area.
+
+Provide shortcut keys to every menus and menu items like ctrl+o, ctrl+s.
+
+Provide a popup menu to contain two options, clear and exit. When user clicks clear, it should clears the window area and when user clicks exit, it should terminate the application.
+
+Save the file as MenuWithSwings.java
+
+2.
+
+Develop Question 1 using JavaFX. Save the file as MenuWithJavaFX.java

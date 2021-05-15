@@ -1,0 +1,72 @@
+Note: 
+-----
+
+After completion of Lab exercise, prepare a word document with all codes and output screenshots for each question of lab exercise. Then convert word document into pdf and should be named as Lab7_RegisterNo.pdf. Later upload it into VTOP.
+
+Lab7 Exercises:
+--------------
+
+1.
+
+a.
+
+Write a program that declares a named constant to hold the number of quarts in
+a gallon (4). Also declare a variable to represent the number of quarts needed for
+a painting job, and assign an appropriate value—for example, 18. Compute and
+display the number of gallons and quarts needed for the job. Display explanatory
+text with the values—for example, A job that needs 18 quarts requires 4 gallons
+plus 2 quarts. Save the program as QuartsToGallons.java.
+
+b.
+
+Convert the QuartsToGallons program to an interactive application. Instead
+of assigning a value to the number of quarts, accept the value from the user as
+input. Save the revised program as QuartsToGallonsInteractive.java.
+
+c.
+
+Now, add exception-handling capabilities to this program and continuously
+reprompt the user while any nonnumeric value is entered. Save the file as
+QuartsToGallonsWithExceptionHandling.java.
+
+2.
+a.
+
+Allow a user to enter any number of double values up to 15. The user should
+enter 99999 to quit entering numbers. Display an error message if the user quits
+without entering any numbers; otherwise, display each entered value and its
+distance from the average. Save the file as DistanceFromAverage.java.
+
+b.
+Now, modify that program to first prompt the user to enter an integer that 
+represents the array size. 
+Java generates a NumberFormatException if you attempt to enter a noninteger
+value using nextInt(); handle this exception by displaying an appropriate
+error message. Create an array using the integer entered as the size. 
+
+Java generates a NegativeArraySizeException if you attempt to create an array
+with a negative size; handle this exception by setting the array size to a default
+value of five. 
+
+If the array is created successfully, use exception-handling
+techniques to ensure that each entered array value is a double before the
+program calculates each element’s distance from the average. Save the file as
+DistanceFromAverageWithExceptionHandling.java.
+
+3.
+a.
+Create a CourseException class that extends Exception and whose constructor
+receives a String that holds a college course’s department (for example, CIS), a
+course number (for example, 101), and a number of credits (for example, 3). Save
+the file as CourseException.java. Create a Course class with the same fields and
+whose constructor requires values for each field. Upon construction, throw a
+CourseException if the department does not consist of three letters, if the course
+number does not consist of three digits between 100 and 499 inclusive, or if the
+credits are less than 0.5 or more than 6. Save the class as Course.java. Write an
+application that establishes an array of at least six Course objects with valid and
+invalid values. Display an appropriate message when a Course object is created
+successfully and when one is not. Save the file as ThrowCourseException.java.
+
+3.b.
+Modify the CourseException class to extend RuntimeException class and identify
+the differences.

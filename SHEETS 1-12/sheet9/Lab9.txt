@@ -1,0 +1,42 @@
+Note: 
+-----
+
+After completion of Lab exercise, prepare a word document with all codes and output screenshots for each question of lab exercise. Then convert word document into pdf and should be named as Lab9_RegisterNo.pdf. Later upload it into VTOP and MS Teams.
+
+Lab9 Exercises:
+--------------
+
+prerequisite: Refer Interthread communication in the textbook "Java complete reference by Herbert Schildt".
+
+1.
+
+Apply Interthread communication to solve the Producer-Consumer problem with a common or shared bounded buffer(Queue) holding upto 5 elements.
+
+The producer consumer problem is a synchronization problem. There is a fixed size buffer and the producer produces items and enters them into the buffer. The consumer removes the items from the buffer and consumes them.
+
+A producer should not produce items into the buffer when the consumer is consuming an item from the buffer and vice versa. So the buffer should only be accessed by the producer or consumer at a time.
+
+When ever buffer is filled up and no more space to add the element into the queue(buffer) producer has to wait until the buffer is emptied by consumer. When ever the buffer is empty and no more items are available for consumption the consumer should wait for producer to produce elements.
+
+Write a solution for N elements, where N is multiple of 5 or greater than 5 other than 0.
+ 
+2.
+
+Develop a simple chat application between two users using "Send-Wait-Receive" Protocol: Once a user sends a message, he waits till a message is received from other user. The users are "User1" and "User2". At initial stage of application, User1 is in sending mode and User2 is in receiving mode. These two users are sending and receiving the messages alternatively.
+ 
+-Create a Chat class with two methods: sendMessage and recvMessage
+-Create two threads to represent two users,User1 and User2.
+-Use Interthread communication to exchange messages.
+-No need to maintain any chat history.
+
+Example:
+User1: Hi
+User2: Hello
+User1: R u preparing for exam?
+User2: Yes
+User1: Ok. Bye
+User2: Bye.
+
+User1(User2):HI
+
+User2(User1):HI

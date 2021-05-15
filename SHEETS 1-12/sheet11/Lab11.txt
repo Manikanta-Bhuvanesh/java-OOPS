@@ -1,0 +1,27 @@
+Note: 
+-----
+
+After completion of Lab exercise, prepare a word document with all codes and output screenshots for each question of lab exercise. Then convert word document into pdf and should be named as Lab11_RegisterNo.pdf. Later upload it into VTOP and MS Teams.
+
+Lab11 Exercises:
+--------------
+
+1.
+
+Write a JavaFX application that allows the user to choose insurance options. Use
+a ToggleGroup to allow the user to select only one of two insurance types—HMO
+(health maintenance organization) or PPO (preferred provider organization).
+Use CheckBoxes for dental insurance and vision insurance options; the user
+can select one option, both options, or neither option. As the user selects each
+option, display its name and price in a text field; the HMO costs $200 per month,
+the PPO costs $600 per month, the dental coverage adds $75 per month, and the
+vision care adds $20 per month. Save the application as FXInsurance.java.
+
+2.
+
+Design a JavaFX application for the Sublime Sandwich Shop. The user makes
+sandwich order choices from list boxes, and the application displays the price.
+The user can choose from three main sandwich ingredients of your choice (for
+example, chicken) at three different prices. The user also can choose from three
+different bread types (for example, rye) from a list of at least three options.
+Save the application as FXSandwich.java.

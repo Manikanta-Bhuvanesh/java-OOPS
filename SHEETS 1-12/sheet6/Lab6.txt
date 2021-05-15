@@ -1,0 +1,53 @@
+Note: 
+-----
+
+After completion of Lab exercise, prepare a word document with all codes and output screenshots for each question of lab exercise. Then convert word document into pdf and should be named as Lab6_RegisterNo.pdf. Later upload it into VTOP.
+
+Lab6 Exercises:
+--------------
+
+1.
+Create the generic interface GenericQueuable<T> that contains the following abstract methods:
+
+- an abstract method insertEnd(T e) which adds the element to the Queue at end.
+- an abstract method removeBegin() which removes a element from the begining of the queue.
+- an abstract method printQueue() which prints the queue elements from the front of the queue to end.
+- an abstract method isQueueEmpty() which returns true if the queue is empty otherwise return false.
+
+Here 'T' should be bounded by Person and its Children.(Refer Lab3 Exercise Question 5 to know the Person hierarchy).
+
+Create GenericQueue<T> such that it implements GenericQueuable<T>. Write a GenericQueueDemo class to test the operations of GenericQueue class with two different queues.
+
+2.a.
+
+Create a generic Map interface MyMap<K,V> that represents a Map structure. K is the type for a key, V is the type of a value. A key is unique in a map and cannot be repeated.
+
+The map contains the following abstract methods.
+
+-an abstract method add(K key, V value) which adds the element to the map
+
+-an abstract method remove(K key) which removes the element with the specified key from the map and returns the value removed.
+
+-a abstract method size() which returns the size of the map
+
+-a abstract method isEmpty() that would return true if the map is empty, and false otherwise.
+
+-a abstract method keys() that returns the list of all keys.
+
+-a abstract method print() that prints all the elements of the map.
+
+
+2.b.
+Create a generic class MyMapImpl that implements the interface MyMap. Use an ArrayList or array to store the keys, and another ArrayList or array to store the values.
+
+
+2.c. 
+
+Create a test class "MyMapTest" that creates two Maps.
+Map1: <String, Integer> where the key is a String and the value is an Integer
+Map2: <Integer, Double> where the key is a Integer and the value is an Double
+Add several elements. Try to add elements with the same key, and check that only one instance is added effectively with no redundancy.
+
+
+
+
